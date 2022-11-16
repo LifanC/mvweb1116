@@ -3,7 +3,7 @@
                                          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
  <session-factory name="hb1116">
-  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
   <property name="hibernate.connection.password">1234</property>
   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/classicmodels?useUnicode=true&amp;characterEncoding=utf-8</property>
   <property name="hibernate.connection.username">root</property>
@@ -11,5 +11,6 @@
   <mapping class="model.Coffee"/>
   <mapping class="model.Supplier"/>
   <mapping class="model.Employee"/>
+  <mapping class="model.Student"/>
  </session-factory>
 </hibernate-configuration>
